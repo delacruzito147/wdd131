@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+h1 {
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+p {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    background-color: #eee;
+}
+
+/* HAMBURGER BUTTON */
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0.5rem 0.75rem;
+    background-color: #eee;
+    color: black;
+
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+/* NAVIGATION */
+
+nav {
+    background-color: #ace;
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+    max-width: 760px;
+}
+
+.navigation li {
+    display: none;
+}
+
+.navigation a {
+    display: block;
+    padding: 0.75rem;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+}
+
+.navigation a:hover {
+    color: white;
+    background-color: black;
+}
+
+/* SHOW MENU */
+
+.show li {
+    display: block;
+}
+
+/* CHANGE ICON WHEN OPEN */
+
+#menu.show::before {
+    content: "✖";
+}
+
+/* WAYFINDING ACTIVE PAGE */
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+/* DESKTOP VIEW */
+
+@media only screen and (min-width: 40em) {
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        flex: 1 1 100%;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
+    }
+}
