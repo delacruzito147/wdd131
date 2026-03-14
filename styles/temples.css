@@ -21,6 +21,10 @@ header {
     cursor: pointer;
 }
 
+nav {
+    display: flex;
+}
+
 .navigation {
     list-style: none;
     padding: 0;
