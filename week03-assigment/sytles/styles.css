@@ -13,16 +13,15 @@ body {
 header {
     background: var(--primary);
     color: white;
-    padding: 1rem;
+    padding: 2rem;
 }
 
 img {
     width: 100%;
-    height: auto;
 }
 
 section {
-    padding: 1rem;
+    padding: 2rem;
     margin: 1rem;
     background: #eee;
 }
@@ -31,12 +30,6 @@ footer {
     background: var(--primary);
     color: white;
     padding: 1rem;
-}
-
-picture img {
-    width: 100%;
-    height: auto;
-    display: block;
 }
 
 /* 📱 MOBILE (default) */
@@ -56,7 +49,7 @@ picture img {
 
     .weather {
         position: absolute;
-        top: 50px;
+        top: 75%;
         right: 50px;
         background: white;
     }
