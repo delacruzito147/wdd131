@@ -33,6 +33,12 @@ footer {
     padding: 1rem;
 }
 
+picture img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
 /* 📱 MOBILE (default) */
 
 /* 💻 DESKTOP */
