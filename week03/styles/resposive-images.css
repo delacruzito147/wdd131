@@ -1,0 +1,25 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+header,
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+
+.hero {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* CLAVE PARA RESPONSIVE */
+.hero img {
+    width: 100%;
+    height: auto;
+}

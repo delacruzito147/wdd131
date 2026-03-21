@@ -1,0 +1,61 @@
+:root {
+    --primary: #c8102e;
+    --secondary: #ffffff;
+    --accent: #007a33;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+    text-align: center;
+}
+
+header {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+section {
+    padding: 1rem;
+    margin: 1rem;
+    background: #eee;
+}
+
+footer {
+    background: var(--primary);
+    color: white;
+    padding: 1rem;
+}
+
+/* 📱 MOBILE (default) */
+
+/* 💻 DESKTOP */
+@media (min-width: 768px) {
+    main {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        background: white;
+    }
+
+    .weather {
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        background: white;
+    }
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+}
