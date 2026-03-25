@@ -22,9 +22,6 @@ header {
     margin: 0 auto;
     /* 👈 centra horizontalmente */
     padding: 20px;
-}
-
-.wrapper {
     display: grid;
     grid-template-columns: 1fr;
     /* móvil primero */
