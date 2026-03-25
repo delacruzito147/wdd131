@@ -59,6 +59,7 @@ footer {
     background: var(--primary);
     color: white;
     padding: 1rem;
+    text-align: center;
 }
 
 /* 📱 MOBILE (default) */
