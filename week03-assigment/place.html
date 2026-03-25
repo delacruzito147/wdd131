@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Page</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/script.js" defer></script>
+    <meta name="description" content="Page about Peru how many people there are and his weather.">
+    <meta name="author" content="Diego De La Cruz">
+</head>
+<body>
+    <header>
+        <h1>Peru</h1>
+    </header>
+    <main>
+        <picture>
+            <source srcset="images/llama-en-machu-picchu.jpg" media="(min-width: 768px)">
+            <img src="images/llama-en-machu-picchu-small.jpg" alt="Peru landscape">
+        </picture>
+
+        <div class="wrapper">
+            <section class="about">
+                <h2>About Peru</h2>
+                <p>Peru, located in western South America, is a culturally rich country famous for the Andes Mountains, the Amazon
+                    rainforest, and its Incan heritage. Its premier attraction, Machu Picchu, is a 15th-century "Lost City of the
+                    Incas"
+                    located 2,430 meters (7,970 ft) above sea level. This UNESCO World Heritage site and New Seven Wonder of the
+                    World is
+                    known for its remarkable dry-stone construction, agricultural terraces, and stunning Andean cloud forest
+                    setting.</p>
+            </section>
+            
+            <section class="data">
+                <h2>Data</h2>
+                <p>Area: 1,285,216 km²</p>
+                <p>Population: 33 million</p>
+                <p>Capital: Lima</p>
+                <p>Language: Spanish</p>
+                <p>Currency: Sol</p>
+                <p>Time Zone:UTC -5</p>
+            </section>
+            <section class="weather">
+                <h2>Weather</h2>
+                <p>Temperature: <span id="temp">8</span>°C</p>
+                <p>Wind Speed: <span id="wind">10</span>km/h</p>
+                <p>Wind Child: <span id="windchill"></span></p>
+            </section>
+            </main>
+        </div>
+
+        
+
+    <footer>
+        <p>© <span id="year"></span> | Peru</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
