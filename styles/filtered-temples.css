@@ -45,6 +45,20 @@ header h2 {
     margin-top: 10px;
 }
 
+/* FLEXBOX EN NAV */
+nav {
+    display: flex;
+    justify-content: center;
+}
+
+/* FLEXBOX EN UL */
+.navigation {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    justify-content: center;
+}
+
 .navigation li a {
     display: block;
     padding: 10px;
