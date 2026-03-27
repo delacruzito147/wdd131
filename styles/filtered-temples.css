@@ -38,12 +38,6 @@ header h2 {
 }
 
 /* ===== NAV ===== */
-.navigation {
-    list-style: none;
-    display: none;
-    flex-direction: column;
-    margin-top: 10px;
-}
 
 /* FLEXBOX EN NAV */
 nav {
