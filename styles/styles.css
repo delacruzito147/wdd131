@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #e6e6e6;
+    margin: 0;
+}
+
+/* Contenedor */
+.container {
+    max-width: 550px;
+    margin: 20px auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Header */
+header {
+    background: #4b003b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+/* Form */
+form {
+    background: #c7c1c6;
+    padding: 20px;
+}
+
+/* Labels */
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+/* Inputs */
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* Fieldset */
+fieldset {
+    margin-top: 15px;
+    border: none;
+}
+
+legend {
+    font-weight: bold;
+}
+
+/* Botón */
+input[type="submit"] {
+    margin-top: 20px;
+    background: #ddd;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background: #bbb;
+}
+
+/* Footer */
+footer {
+    background: #4b003b;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}

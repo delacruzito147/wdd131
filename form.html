@@ -4,58 +4,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Product Review Form">
+    <meta name="author" content="Diego De La Cruz Zambrano">
     <title>Product Review</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
- <div class="container">
-    <h1>Product Review Form</h1>
-    
-    <form method="get" action="review.html">
-    
-        <!-- Product Name -->
-        <label for="product">Product Name</label>
-        <select id="product" name="product" required>
-            <option value="" disabled selected>Select a Product ...</option>
-        </select>
-    
-        <!-- Rating -->
-        <p>Overall Rating</p>
-        <label><input type="radio" name="rating" value="1" required> ⭐</label>
-        <label><input type="radio" name="rating" value="2"> ⭐⭐</label>
-        <label><input type="radio" name="rating" value="3"> ⭐⭐⭐</label>
-        <label><input type="radio" name="rating" value="4"> ⭐⭐⭐⭐</label>
-        <label><input type="radio" name="rating" value="5"> ⭐⭐⭐⭐⭐</label>
-    
-        <!-- Date -->
-        <label for="date">Date of Installation</label>
-        <input type="date" id="date" name="date" required>
-    
-        <!-- Features -->
-        <p>Useful Features</p>
-        <label><input type="checkbox" name="features" value="Easy Use"> Easy Use</label>
-        <label><input type="checkbox" name="features" value="Design"> Design</label>
-        <label><input type="checkbox" name="features" value="Performance"> Performance</label>
-    
-        <!-- Review -->
-        <label for="review">Written Review</label>
-        <textarea id="review" name="review"></textarea>
-    
-        <!-- Name -->
-        <label for="username">Your Name</label>
-        <input type="text" id="username" name="username">
-    
-        <!-- Submit -->
-        <input type="submit" value="Submit Review">
-    
-    </form>
-    
-    <footer>
-        <p>© 2026 | Product Review</p>
-    </footer>
- </div>
-    
+    <div class="container">
+
+        <header>
+            <h1>Product Review Form</h1>
+        </header>
+
+        <form method="get" action="review.html">
+
+            <!-- Product -->
+            <label for="product">Product Name</label>
+            <select id="product" name="product" required>
+                <option value="" disabled selected>Select a Product ...</option>
+            </select>
+
+            <!-- Rating -->
+            <fieldset>
+                <legend>Overall Rating</legend>
+
+                <label><input type="radio" name="rating" value="1" required> ★</label>
+                <label><input type="radio" name="rating" value="2"> ★★</label>
+                <label><input type="radio" name="rating" value="3"> ★★★</label>
+                <label><input type="radio" name="rating" value="4"> ★★★★</label>
+                <label><input type="radio" name="rating" value="5"> ★★★★★</label>
+
+            </fieldset>
+
+            <!-- Date -->
+            <label for="date">Date of Installation</label>
+            <input type="date" id="date" name="date" required>
+
+            <!-- Features -->
+            <fieldset>
+                <legend>Useful Features (Check all that apply)</legend>
+
+                <label><input type="checkbox" name="features" value="Durability"> Durability</label>
+                <label><input type="checkbox" name="features" value="Ease of Use"> Ease of Use</label>
+                <label><input type="checkbox" name="features" value="Performance"> Performance</label>
+                <label><input type="checkbox" name="features" value="Design"> Design</label>
+
+            </fieldset>
+
+            <!-- Review -->
+            <label for="review">Written Review (Optional)</label>
+            <textarea id="review" name="review"></textarea>
+
+            <!-- Name -->
+            <label for="username">Your Name (Optional)</label>
+            <input type="text" id="username" name="username">
+
+            <!-- Submit -->
+            <input type="submit" value="Post Review">
+
+        </form>
+
+        <footer>
+            <p>© 2026  Diego De La Cruz Zambrano  </p>
+        </footer>
+
+    </div>
 
     <script src="script.js"></script>
 </body>
