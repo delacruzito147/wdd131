@@ -52,10 +52,10 @@ const temples = [
 ];
 
 const container = document.querySelector("#temple-container");
-
+//EN FUNCION ENSEÑA LA LISTA Y LIMPIA PORQUE TAMBIEN ESTA OLD NEW//
 function displayTemples(list) {
   container.innerHTML = "";
-
+//POR CADA LISTA CREA UN CUADRO Y SU INFORMACION COMO UNA PLANTILLA//
   list.forEach(t => {
     const card = document.createElement("figure");
 
@@ -98,3 +98,10 @@ displayTemples(temples);
 // FOOTER
 document.querySelector("#year").textContent = new Date().getFullYear();
 document.querySelector("#lastModified").textContent = document.lastModified;
+
+const menuButton = document.querySelector("#menu");
+const nav = document.querySelector(".navigation");
+
+menuButton.addEventListener("click", () => {
+  nav.classList.toggle("open");
+});

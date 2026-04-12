@@ -1,8 +1,10 @@
 
 /* ===== RESET BÁSICO ===== */
 * {
+    /*esto se aplica a cada elemento h2, button, etc */
     margin: 0;
     padding: 0;
+    /*ESTO SI QUIERES EL WIDTH COMO UN TODO UNCLULLENDO PADDING*/
     box-sizing: border-box;
 }
 
@@ -19,6 +21,7 @@ header {
     color: white;
     padding: 1rem;
     position: relative;
+    /*el width es automatico? y que hace el padding al width?*/
 }
 
 header h2 {
@@ -48,9 +51,15 @@ nav {
 /* FLEXBOX EN UL */
 .navigation {
     display: flex;
+    display: none;
+    flex-direction: column;
     gap: 20px;
     list-style: none;
     justify-content: center;
+}
+
+.navigation.open {
+    display: flex;
 }
 
 .navigation li a {
